@@ -1,75 +1,63 @@
-
 # Arithmetic Operators
 
-# + addition
-# - subtraction
-# * multiplication
-# / division
-# // floor division
-# % Modulus
-# ** Exponentiation
+# Basic arithmetic operations
+# +  Addition
+# -  Subtraction
+# *  Multiplication
+# /  Division
+# // Floor Division (Quotient without remainder)
+# %  Modulus (Remainder of division)
+# ** Exponentiation (Power calculation)
 
 a = 10
 b = 3
 
-print("Addition", a + b)
-print("Subtraction", a - b)
-print("Mulitplication", a * b)
-print("Division", a / b)
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
 
-print("Floort divsion:", a // b) # 3.333 => 3
-print("Modulus", a % b)
-print("Exponentiation:", a ** b)
+print("Floor division:", a // b)  # 10 / 3 = 3.333 => 3 (integer result)
+print("Modulus:", a % b)  # Remainder of division
+print("Exponentiation:", a ** b)  # 10^3 = 1000
 
-# Comparisoin Operators = True or False
+# Comparison Operators - Returns True or False
 
-# == - quals to 
-# != - not equal to 
-# > greater than
-# < less than 
-# >= Greater than or quals to 
-# <= Less than or equal to
-
+# ==  Equal to
+# !=  Not equal to
+# >   Greater than
+# <   Less than
+# >=  Greater than or equal to
+# <=  Less than or equal to
 
 c = 10
 d = 10
 
+print("Not equal:", c != d)  # False because 10 == 10
+print("Less than:", c < d)   # False because 10 is not less than 10
+print("Less than or equal to:", c <= d)  # True because 10 is equal to 10
 
-print(c != d)
+# Logical Operators - Returns True or False
 
-print(c < d)
-print(c <= d) # Less than && equal
-
-
-# Logical Operators. => True || False
-
-# and ==> &&
-# or ==> ||
-# not ==> !
+# and - Returns True if both conditions are true
+# or  - Returns True if at least one condition is true
+# not - Reverses the result
 
 x = 5
 y = 10
 
-print( x > 2 and y > 5) # Returns True if both conditions are true otherwise it returns false
+print("Logical AND:", x > 2 and y > 5)  # True (Both conditions are true)
+print("Logical OR:", x > 2 or y < 5)  # True (At least one condition is true)
+print("Logical NOT:", not (2 > 10))  # True (Reverses False to True)
 
-print( x > 2 or y < 5) # Return True if at least one condition is true
+# Membership Operators - Checks if a value is in a sequence
 
-print( not 2 > 10) # Reverse the result
+# in     - Returns True if a value is present in the sequence
+# not in - Returns True if a value is NOT present in the sequence
 
-
-# Membership operators - True
-# in -  Returns True if a value is in the sequest
-# not in - Reverse the in result.
-
-fruits = ['apple', 'bannana', 'cherry']
-
+fruits = ['apple', 'banana', 'cherry']  # Corrected spelling from 'bannana'
 numbers = [10, 20, 40, 50, 60]
 
-print(fruits)
-
-print(20 not in numbers)
-print('mango'  not in fruits)
-
-
-
-
+print("Fruits list:", fruits)
+print("Is 20 not in numbers?", 20 not in numbers)  # False because 20 is in numbers
+print("Is 'mango' not in fruits?", 'mango' not in fruits)  # True because 'mango' is not in fruits

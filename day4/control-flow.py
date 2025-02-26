@@ -1,66 +1,51 @@
-# Coditional Statements 
+# Conditional Statements
 
-# 1. if 
+# 1. if Statement
+# Checks a condition and executes the indented block if the condition is True
 
-# Syntax: if <condtion>:
-
-
-# eligibility for vote
+# Example: Checking voting eligibility
 age = 15
 
 if age >= 18:
-    print("You are eligilbe to vote")
+    print("You are eligible to vote")
 
-# else 
-
-# sytax:
-
-# if condition:
-#     Code...
-# else: 
-#     Code...
+# 2. if-else Statement
+# Executes one block if the condition is True, otherwise executes the else block
 
 age = 25
 
 if age >= 18:
-    print("You are eligilbe to vote")
+    print("You are eligible to vote")
 else:
     print("You are not eligible to vote yet.")
 
-# elif
-
-# sytax:
-
-# if condition:
-#     Code...
-# elif condition2:
-#     Code...
-# else: 
-#     Code...
-
+# 3. if-elif-else Statement
+# Allows multiple conditions to be checked sequentially
 
 marks = 95
 
-# marks >= 90 : Grade A
-# marks >= 75 : Grade B
-# marks >= 50 : Grade C
-# Below 50: Grade F
+# Grading System:
+# 90 and above      : Grade A
+# 75 to 89         : Grade B
+# 50 to 74         : Grade C
+# Below 50         : Grade F
 
 if marks > 100 or marks < 0:
-    print("Hey please add proper numbers!")
+    print("Hey, please add proper numbers!")
 elif marks >= 90:
-    print("Congratulations! your Grade is A!")
+    print("Congratulations! Your Grade is A!")
 elif marks >= 75:
     print("Wow! Your grade is B")
 elif marks >= 50:
     print("Work hard, your grade is C")
 else:
-    print("Sorry! You are failed!!")
+    print("Sorry! You have failed!!")
 
+# Basic arithmetic operations
+print("Division:", 10 / 2)  # Division
+print("Remainder:", 10 % 2)  # Modulus (Remainder)
 
-print("Division: ", 10 / 2)
-print("Reminder: ", 10 % 2)
-
+# Checking if a number is even or odd
 num = int(input("Enter a number: "))
 
 if num % 2 == 0:
@@ -68,6 +53,7 @@ if num % 2 == 0:
 else:
     print("Odd number")
 
+# User authentication system
 username = input("Enter your username: ")
 password = input("Enter password: ")
 
